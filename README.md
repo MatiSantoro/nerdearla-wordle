@@ -40,3 +40,5 @@ npm run serve
 4. Tienes 6 intentos para adivinar la palabra correcta
 
 ¡Buena suerte!
+
+![alt text](image.png)
