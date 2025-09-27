@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121213;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+#game-board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #121213;
+    color: white;
+}
+
+.cell.filled {
+    border-color: #565758;
+}
+
+.cell.correct {
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+}
+
+.cell.present {
+    background-color: #c9b458;
+    border-color: #c9b458;
+}
+
+.cell.absent {
+    background-color: #787c7e;
+    border-color: #787c7e;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.key {
+    padding: 14px 20px;
+    background-color: #818384;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 43px;
+}
+
+.key:hover {
+    background-color: #565758;
+}
+
+.key.wide {
+    padding: 14px 24px;
+}
+
+.key.correct {
+    background-color: #6aaa64;
+}
+
+.key.present {
+    background-color: #c9b458;
+}
+
+.key.absent {
+    background-color: #3a3a3c;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+.win {
+    color: #6aaa64;
+}
+
+.lose {
+    color: #f5793a;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "nerdearla-test-wordle",
+  "version": "1.0.0",
+  "description": "Juego de Wordle implementado en TypeScript",
+  "main": "game.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["wordle", "game", "typescript"],
+  "author": "",
+  "license": "MIT"
+}
